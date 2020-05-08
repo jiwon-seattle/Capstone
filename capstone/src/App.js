@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-function App() {
+export default class App extends React.Component {
+  state= {
+    isLoaded: false
+  }
+render () {
+  const { isLoaded } = this.state;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <View style={styles.container}>
+      {isLoaded ? null : <View style={styles.loading}><Text style={styles.loadingText}>Getting weather</Text></View>}
+    </View>
+  )
 }
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff"
+  },
+  loading:{
+    flex: 1,
+    backgroundColor: "#FDF6AA"
+    ,
+    justifyContent: "flex-end",
+    paddingLeft: 25,
+  },
+  loadingText: {
+    fontSize: 38,
+    marginBottom: 100
+  }
 
-export default App;
+});
