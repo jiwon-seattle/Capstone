@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
   },
   loading:{
     flex: 1,
-    backgroundColor: "#FDF6AA"
-    ,
+    backgroundColor: "#FDF6AA",
+    //bottom 
     justifyContent: "flex-end",
     paddingLeft: 25,
   },
