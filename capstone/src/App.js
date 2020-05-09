@@ -1,16 +1,32 @@
 import * as React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import Weather from "./Weather";
 
 export default class App extends React.Component {
   state= {
-    isLoaded: true
+    isLoaded: false,
+    error: null
+  }
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        this.setState(
+          {isLoaded: true}
+        )
+      },
+      error => {
+        this.setState( 
+          {error: error}
+        )
+      }
+    )
   }
 render () {
-  const { isLoaded } = this.state;
+  const { isLoaded, error } = this.state;
   return (
     <View style={styles.container}>
-      {isLoaded ? <Weather/> : <View style={styles.loading}><Text style={styles.loadingText}>Getting weather</Text></View>}
+      <StatusBar hidden={true}/>
+      {isLoaded ? (<Weather/>) : (<View style={styles.loading}><Text style={styles.loadingText}>Getting weather</Text> {error ? <Text style={styles.errorText}>(error)</Text> : null }</View>)}
     </View>
   )
 }
@@ -19,6 +35,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff"
+  },
+  errorText: {
+    color: "red",
+    backgroundColor: "transparent"
   },
   loading:{
     flex: 1,
