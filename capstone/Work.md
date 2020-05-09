@@ -3,6 +3,17 @@
 ## React Native
 `npm install react-native`
 
+To get current location : 
+
+```bash
+navigator.geolocation.getCurrentPosition(
+      position => {
+        this.setState(
+          {isLoaded: true}
+        )
+      },
+```
+    
 ### Development tool
 + [Expo Snack](https://expo.io/tools)
 
