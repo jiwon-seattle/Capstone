@@ -4,6 +4,9 @@ import Weather from "./Weather";
 
 const API_KEY= "64f606f4c956d314b74c3fb5e267823a";
 
+//api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your api key}
+
+
 export default class App extends React.Component {
   state= {
     isLoaded: false,
