@@ -1,6 +1,11 @@
 5/8/2020
 
-## React Native
+## What I did today :
+
+Searched about React Native and made simple weather app using current location for practice.
+
+### React Native
+
 `npm install react-native`
 
 To get current location : 
@@ -13,7 +18,7 @@ navigator.geolocation.getCurrentPosition(
         )
       },
 ```
-    
+
 ### Development tool
 + [Expo Snack](https://expo.io/tools)
 

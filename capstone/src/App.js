@@ -43,7 +43,7 @@ export default class App extends Component {
         <StatusBar hidden={true} />
         {isLoaded ? (
           <Weather
-            weatherName={"Mist"}
+            weatherName={name}
             temp={Math.ceil(temperature - 273.15)}
           />
         ) : (

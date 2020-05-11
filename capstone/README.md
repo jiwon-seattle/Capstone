@@ -1,68 +1,132 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Signal
 
-In the project directory, you can run:
+#### A reception information sharing mobile application 
 
-### `npm start`
+#### By Jiwon Han**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+![LastCommit](https://img.shields.io/github/last-commit/jiwon-seattle/Movie-ticket-booking)
+![Languages](https://img.shields.io/github/languages/top/jiwon-seattle/Movie-ticket-booking)
+[![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**This application was developed by react-redux.** -->
 
-### `npm test`
+## 1. User Flow
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- This is a movie ticket booking site with create/read/update/delete functionality. There are main feature : **movie management** and **movie booking**. 
 
-### `npm run build`
+1. A user is guided to the site at the first initial page.
+1. A user is able to navigate the site through nav bar.
+2. A user is able to see a movie list.
+3. A user clicks a specific movie and page turns to movie detail page.
+4. A user is able to see movie information in detailed.
+5. A user is able to delete the movie in the detail page.
+6. A user is able to update the movie clicked by `EDIT` in the movie detail page.
+7. A user is able to add a new movie clicked by  `Add Movie` at the nav bar.
+8. A new movie is created with timestamp.
+9. A user is able to navigate to Booking page.
+10. A user is able to choose a movie on the drop down menu to make a reservation.
+11. A movie screen and seat information comes up.
+12. A user is able to choose a seat and if seat is already booked, `Already booked` message is shown.
+13. After booking, a user is able to check ticket amounts decreased in the movie detail page. 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Diagram
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. 1st plan : before redux, react only
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="src/img/diagram.png" width="550px" />
 
-### `npm run eject`
+2. react-redux plan
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src="src/img/ReduxDiagram.png" width="550px" />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Sreenshot
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img src="src/img/intro.png" width="550px" />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img src="src/img/movies.png" width="700px" />
 
-## Learn More
+<img src="src/img/detail.png" width="700px" />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="src/img/booking.png" width="700px" />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img src="src/img/movieSite.gif" width="700px" />
 
-### Code Splitting
+### What's Included
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```bash 
+|-- _tests_ :
+|-- actions :
+|   |-- actions.jsx
+|   |-- fetchData.jsx
+|-- components :
+|   |-- App.jsx
+|   |   |-- Nav/Main/Footer
+|   |-- App.css
+|   |-- Footer.jsx
+|   |-- Intro.jsx
+|   |-- Booking
+|   |   |-- Booking.jsx
+|   |   |-- Booking.css
+|   |-- Movie
+|   |   |-- Control.jsx
+|   |   |-- Movie.jsx
+|   |   |-- MovieAdd.jsx
+|   |   |-- MovieEdit.jsx
+|   |   |-- MovieInfo.jsx
+|   |   |-- MovieList.jsx
+|   |   |-- Movie.css
+|-- reducers :
+|   |   |-- reducer.js
+|-- history.jsx
+|-- index.jsx
+```
+**All components were descripted with propTypes**
 
-### Analyzing the Bundle Size
+### Future improvements
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+1. Database such as firebase
+2. Server -->
 
-### Making a Progressive Web App
+## 2. Development
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Tech stack:
 
-### Advanced Configuration
+<!-- + [NPM](https://www.npmjs.com/) for package management
++ [react](https://reactjs.org/), [react-redux](https://react-redux.js.org/) as core stack
++ [Movie API](https://yts.mx/api)
++ [drawio](https://app.diagrams.net/) for diagram
++ [bootstrap](https://getbootstrap.com/)
++ [favicon](https://www.favicon-generator.org/)  -->
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+<!-- ### To run dev mode locally:
 
-### Deployment
+```bash
+  $ git clone https://github.com/jiwon-seattle/Movie-Booking-Site.git
+  $ cd the repository
+  $ npm install  
+  # After successfull pkg installtion
+  $ npm start
+```
+Now, it will automatically open http://localhost:3000 and show you movie ticket site.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+_If you encouter with initial npm packages issues, please delete `package-lock.json` file in the directory._ -->
 
-### `npm run build` fails to minify
+### Packages used
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<!-- `react` `react-redux` `react-bootstrap` `react-dom` `react-router-dom` `react-scripts` `redux` `axios` -->
+
+## 3. Known Bugs
+
+There are no known bug at this moment
+
+## 4. Support and contact details
+
+Any feedback is appreciated! Please contact at email: jiwon1.han@gmail.com
+
+### License
+
+*This software is licensed under the MIT license*
+
+Copyright (c) 2020 **_Jiwon Han_**
