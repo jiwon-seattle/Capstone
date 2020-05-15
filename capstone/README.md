@@ -3,104 +3,34 @@
 
 #### A reception information sharing mobile application 
 
-#### By Jiwon Han**
+#### By Jiwon Han
 
-<!-- [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![LastCommit](https://img.shields.io/github/last-commit/jiwon-seattle/Movie-ticket-booking)
-![Languages](https://img.shields.io/github/languages/top/jiwon-seattle/Movie-ticket-booking)
-[![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
+## 1. Description
 
-**This application was developed by react-redux.** -->
+Signal is a mobile application that share locations where they have non-reception or bad-recaiption.
+<br/>
+This product will provide the platform that people share the bad/non reception area information. A user is able to report the reception information on the Signal app. Based on information, Users could prepare before having a unexpectable reception issue. User also could find the secret service spots in non-reception area.
 
-## 1. User Flow
+## 2. Simple version of user flow
 
-<!-- This is a movie ticket booking site with create/read/update/delete functionality. There are main feature : **movie management** and **movie booking**. 
+1. A user is able to report bad or non-reception area.
+2. A area information is stored in cloud data.
+2. Users can share the information.
 
-1. A user is guided to the site at the first initial page.
-1. A user is able to navigate the site through nav bar.
-2. A user is able to see a movie list.
-3. A user clicks a specific movie and page turns to movie detail page.
-4. A user is able to see movie information in detailed.
-5. A user is able to delete the movie in the detail page.
-6. A user is able to update the movie clicked by `EDIT` in the movie detail page.
-7. A user is able to add a new movie clicked by  `Add Movie` at the nav bar.
-8. A new movie is created with timestamp.
-9. A user is able to navigate to Booking page.
-10. A user is able to choose a movie on the drop down menu to make a reservation.
-11. A movie screen and seat information comes up.
-12. A user is able to choose a seat and if seat is already booked, `Already booked` message is shown.
-13. After booking, a user is able to check ticket amounts decreased in the movie detail page. 
+### Additional Features
+Alert feature </br>
+Showing marked-up non/bad reception area in Map UI</br>
+User authentication (database, Facebook, Google)
 
-### Diagram
-
-1. 1st plan : before redux, react only
-
-<img src="src/img/diagram.png" width="550px" />
-
-2. react-redux plan
-
-<img src="src/img/ReduxDiagram.png" width="550px" />
-
-### Sreenshot
-
-<img src="src/img/intro.png" width="550px" />
-
-<img src="src/img/movies.png" width="700px" />
-
-<img src="src/img/detail.png" width="700px" />
-
-<img src="src/img/booking.png" width="700px" />
-
-<img src="src/img/movieSite.gif" width="700px" />
-
-### What's Included
-
-```bash 
-|-- _tests_ :
-|-- actions :
-|   |-- actions.jsx
-|   |-- fetchData.jsx
-|-- components :
-|   |-- App.jsx
-|   |   |-- Nav/Main/Footer
-|   |-- App.css
-|   |-- Footer.jsx
-|   |-- Intro.jsx
-|   |-- Booking
-|   |   |-- Booking.jsx
-|   |   |-- Booking.css
-|   |-- Movie
-|   |   |-- Control.jsx
-|   |   |-- Movie.jsx
-|   |   |-- MovieAdd.jsx
-|   |   |-- MovieEdit.jsx
-|   |   |-- MovieInfo.jsx
-|   |   |-- MovieList.jsx
-|   |   |-- Movie.css
-|-- reducers :
-|   |   |-- reducer.js
-|-- history.jsx
-|-- index.jsx
-```
-**All components were descripted with propTypes**
-
-### Future improvements
-
-1. Database such as firebase
-2. Server -->
-
-## 2. Development
+## 3. Development
 
 ### Tech stack:
 
-<!-- + [NPM](https://www.npmjs.com/) for package management
-+ [react](https://reactjs.org/), [react-redux](https://react-redux.js.org/) as core stack
-+ [Movie API](https://yts.mx/api)
-+ [drawio](https://app.diagrams.net/) for diagram
-+ [bootstrap](https://getbootstrap.com/)
-+ [favicon](https://www.favicon-generator.org/)  -->
-
-<!-- ### To run dev mode locally:
++ [NPM](https://www.npmjs.com/) for package management
++ React Native
++ ASP .NET for backend API
++ MapBox or React-native-map(google map)
++ AWS DynamoDB for database
 
 ```bash
   $ git clone https://github.com/jiwon-seattle/Movie-Booking-Site.git
@@ -111,11 +41,10 @@
 ```
 Now, it will automatically open http://localhost:3000 and show you movie ticket site.
 
-_If you encouter with initial npm packages issues, please delete `package-lock.json` file in the directory._ -->
+_If you encouter with initial npm packages issues, please delete `package-lock.json` file in the directory.
 
 ### Packages used
 
-<!-- `react` `react-redux` `react-bootstrap` `react-dom` `react-router-dom` `react-scripts` `redux` `axios` -->
 
 ## 3. Known Bugs
 
