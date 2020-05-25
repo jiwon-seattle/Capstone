@@ -17,12 +17,12 @@ This product will offer a notification feature that if you are closer to the are
 
 ## Minimum Viable Product
 
-User registration (database storage)
-User login/sign-out (with database authentication)
-Map UI that receives current user location
-Capability to report an area that has bad reception 
-Capability to show appreciation to other users who shared the information
-Capability to correct the false information
+1. Map UI that receives current user location
+2. Capability to report an area that has bad reception 
+3. Capability to show appreciation to other users who shared the information
+4. Capability to correct the false information
+5. User registration (database storage)
+6. User login/sign-out (with database authentication)
 
 ### Tools for MVP
 
