@@ -6,14 +6,17 @@
 
 Signal is a mobile application that share locations where they have non-reception or bad-recaiption.
 
-Use Case
-Have you ever encountered a situation that when you went on a trip and found that area has no signal at all? Have you drived along the long way to the destination and lost a reception so you had to find the ways without convinient map services provided from phone? Are you a active explorer of nature and want to know there possibly are a few spots where you can use your phone with service? 
+### Use Case
 
-This product will provide the platform that people share the bad/non reception area information. A user is able to report the reception information on the Signal app. Based on information, Users could prepare before having a unexpectable reception issue. User also could find the secret service spots in non-reception area. 
+Have you ever encountered a situation that when you went on a trip and found that area has no signal at all?<br/> 
+Have you driven along the long way to the destination and lost a reception so you had to find the ways without convenient map services provided from the phone?<br/> Are you an active explorer of nature and want to know there possibly are a few spots where you can use your phone with service? 
 
-This product will offer notification feature that if you are closer to the area, the app let you know beforehand so that users could be informed that they will lose a reception soon.
+This product will provide the platform that people share the bad/non-reception area information. A user is able to report the reception information on the Signal app. Based on information, Users could prepare before having an unexpectable reception issue. Users also could find the secret service spots in the non-reception area. 
+
+This product will offer a notification feature that if you are closer to the area, the app lets you know beforehand so that users could be informed that they will lose a reception soon.
 
 ## Minimum Viable Product
+
 User registration (database storage)
 User login/sign-out (with database authentication)
 Map UI that receives current user location
@@ -40,7 +43,4 @@ Capability to correct the false information
   * react-redux for state management
   * Facebook Authentication
   * Google Authentication
-
-### Additional Information
-5.8 - Working hard on this. Thanks!
 
